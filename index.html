@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'Images - Mongoo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Catégories</h2>
+            <ul id="categoryList">
+                <li data-category="all" class="active">Toutes</li>
+                <li data-category="salads">Salades</li>
+                <li data-category="desserts">Desserts</li>
+                <li data-category="sauces">Sauces</li>
+                <li data-category="drinks">Boissons</li>
+            </ul>
+        </aside>
+        <main class="gallery" id="imageGrid">
+            <img src="images/salads.webp" alt="Salads" data-category="salads" class="gallery-item">
+            <img src="images/desserts.jpg" alt="Desserts" data-category="desserts" class="gallery-item">
+            <img src="images/sauces.jpg" alt="Sauces" data-category="sauces" class="gallery-item">
+            <img src="images/drinks.webp" alt="Drinks" data-category="drinks" class="gallery-item">
+        </main>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <a class="prev" id="prev">&lt;</a>
+        <a class="next" id="next">&gt;</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
